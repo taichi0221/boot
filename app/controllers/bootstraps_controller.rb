@@ -1,6 +1,6 @@
 class BootstrapsController < ApplicationController
 
-  #require 'openai'
+  require 'openai'
 
   def index
     if params[:prompt].present?

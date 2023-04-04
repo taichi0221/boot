@@ -6,4 +6,6 @@
 
 <% if @generated_text.present? %>
   <p><%= @generated_text %></p>
+  <% tweet_text = "#{@generated_text} #駆け出しエンジニアとつながりたい" %>
+  <%= link_to "Tweet this!", "https://twitter.com/intent/tweet?text=#{URI.encode(tweet_text)}" %>
 <% end %>
