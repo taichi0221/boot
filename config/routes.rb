@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: 'bootstraps#index'
-  resources :bootstrap
+  resources :bootstraps, only: [:new, :index]
 end
